@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 
 
 app.get('/igdg',async (req,res,next)=>{
-    let pro_time = "Mayank aaloo hai"
+    let pro_time = "Data Received:"+req.param('name')+""+req.param('score');
     
     res.send(pro_time);
 });
