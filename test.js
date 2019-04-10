@@ -17,6 +17,5 @@ app.get('/return/:data',async (req,res,next)=>{
     res.send(pro);
 });
 app.use('/', express.static(__dirname + '/'));
-app.set('port',process.env.PORT || 3000);
-app.listen(port);
+app.listen(process.env.PORT);
 
